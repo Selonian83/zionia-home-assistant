@@ -1,0 +1,33 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect ZIONIA",
+        "description": "Create a key on the ZIONIA server with: node scripts/cle-api.js creer <email>",
+        "data": {
+          "url": "ZIONIA address",
+          "api_key": "API key"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "ZIONIA rejected this API key.",
+      "cannot_connect": "Cannot reach ZIONIA at this address."
+    },
+    "abort": {
+      "already_configured": "This ZIONIA account is already configured."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Where to play the answers",
+        "description": "By default, Assist plays the answer on the device that listened. Choose a speaker to hear every ZIONIA answer there instead, whatever the wording of the question.",
+        "data": {
+          "lecteur": "Speaker",
+          "voix": "Text-to-speech (Piper by default)"
+        }
+      }
+    }
+  }
+}

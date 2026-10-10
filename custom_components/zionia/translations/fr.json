@@ -1,0 +1,33 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connecter ZIONIA",
+        "description": "Crée une clé sur le serveur ZIONIA avec : node scripts/cle-api.js creer <courriel>",
+        "data": {
+          "url": "Adresse de ZIONIA",
+          "api_key": "Clé d'API"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "ZIONIA refuse cette clé d'API.",
+      "cannot_connect": "Impossible de joindre ZIONIA à cette adresse."
+    },
+    "abort": {
+      "already_configured": "Ce compte ZIONIA est déjà configuré."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Où lire les réponses",
+        "description": "Par défaut, Assist lit la réponse sur l'appareil qui a écouté. Choisis une enceinte pour y entendre toutes les réponses de ZIONIA, quelle que soit la façon de poser la question.",
+        "data": {
+          "lecteur": "Enceinte",
+          "voix": "Synthèse vocale (Piper par défaut)"
+        }
+      }
+    }
+  }
+}

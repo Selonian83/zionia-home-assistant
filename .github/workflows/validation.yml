@@ -1,0 +1,25 @@
+# Vérifie à chaque push ce que HACS et Home Assistant vérifieront chez
+# les clients : la structure du dépôt (HACS) et le manifeste (hassfest).
+name: Validation
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  hacs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: hacs/action@main
+        with:
+          category: integration
+          # Les icônes viennent du dépôt home-assistant/brands, où
+          # l'intégration n'est pas encore inscrite.
+          ignore: brands
+
+  hassfest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: home-assistant/actions/hassfest@master
