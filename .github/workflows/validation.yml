@@ -14,9 +14,13 @@ jobs:
       - uses: hacs/action@main
         with:
           category: integration
-          # Les icônes viennent du dépôt home-assistant/brands, où
-          # l'intégration n'est pas encore inscrite.
-          ignore: brands
+          # brands : les icônes viennent du dépôt home-assistant/brands,
+          # où l'intégration n'est pas encore inscrite.
+          # license : HACS n'accepte que les licences reconnues par
+          # GitHub (MIT, Apache…) ; « Tous droits réservés » ne l'est
+          # pas. Ce contrôle ne vaut que pour la liste officielle de
+          # HACS — l'installation par dépôt personnalisé ne le fait pas.
+          ignore: brands license
 
   hassfest:
     runs-on: ubuntu-latest
