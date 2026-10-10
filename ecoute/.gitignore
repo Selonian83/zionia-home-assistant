@@ -1,0 +1,4 @@
+# Contient le jeton d'accès à Home Assistant.
+reglages.ini
+.venv/
+__pycache__/

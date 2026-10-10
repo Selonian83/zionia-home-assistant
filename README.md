@@ -87,6 +87,12 @@ question est posée.
 > Assistant, à son adresse locale. Vérifie **Paramètres → Système →
 > Réseau → URL locale** : par exemple `http://192.168.1.10:8123`.
 
+## Parler sans cliquer *(facultatif)*
+
+Avec un PC Windows et un casque, **ZIONIA Écoute** attend un mot
+d'activation et pose la question tout seul, sans ouvrir Assist. Voir
+[`ecoute/`](ecoute/README.md).
+
 ## Essayer sans micro
 
 Ouvre **Assist** (l'icône de bulle en haut de la Vue d'ensemble) et tape
