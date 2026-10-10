@@ -3,7 +3,7 @@
     "step": {
       "user": {
         "title": "Connecter ZIONIA",
-        "description": "Crée une clé sur le serveur ZIONIA avec : node scripts/cle-api.js creer <courriel>",
+        "description": "Crée une clé sur zionia.app : Paramètres → Clés d'API.",
         "data": {
           "url": "Adresse de ZIONIA",
           "api_key": "Clé d'API"

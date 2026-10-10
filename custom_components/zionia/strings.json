@@ -3,7 +3,7 @@
     "step": {
       "user": {
         "title": "Connect ZIONIA",
-        "description": "Create a key on the ZIONIA server with: node scripts/cle-api.js creer <email>",
+        "description": "Create a key on zionia.app: Settings → API keys.",
         "data": {
           "url": "ZIONIA address",
           "api_key": "API key"
